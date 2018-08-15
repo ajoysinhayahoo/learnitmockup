@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><% include ../../common/head.htm %>
+
+<style type="text/css">
+
+.panel-body {
+	min-height: 35px;
+	height: 35px;
+}
+
+</style>
+</head>
+
+<body class="navbar-top">
+
+	<!-- Main navbar -->
+	<div class="navbar navbar-inverse navbar-fixed-top"><% include
+		../../common/logo.htm %> <% include ../../common/topbar.htm %></div>
+	<!-- /main navbar -->
+
+
+	<!-- Page container -->
+	<div class="page-container">
+
+		<!-- Page content -->
+		<div class="page-content">
+
+			<!-- Main sidebar -->
+			<div class="sidebar sidebar-main">
+				<div class="sidebar-content">
+
+					<!-- User menu -->
+					<% include ../../common/usermenu.htm %>
+					<!-- /user menu -->
+
+
+					<!-- Main navigation -->
+					<% include ../../common/mainnav.htm %>
+					<!-- /main navigation -->
+
+				</div>
+			</div>
+			<!-- /main sidebar -->
+
+
+			<!-- Main content -->
+			<div class="content-wrapper">
+
+				<!-- Page header -->
+				<div class="page-header page-header-default">
+
+					<!-- Content Header -->
+					<div class="page-header-content">
+						<div class="page-title">
+							<h4>
+								<i class="icon-arrow-left52 position-left"></i> <span
+									class="text-semibold">MCQ</span> - New Question
+							</h4>
+						</div>
+
+						<div class="heading-elements">
+							<a href="#"
+								class="btn btn-labeled btn-labeled-right bg-blue heading-btn">Button
+								<b><i class="icon-menu7"></i></b>
+							</a>
+						</div>
+					</div>
+					<!-- /Content Header -->
+
+					<!-- Content Breadcrumb -->
+					<div class="breadcrumb-line">
+						<ul class="breadcrumb">
+							<li><a href="index.html"><i
+									class="icon-home2 position-left"></i> Home</a></li>
+							<li><a href="layout_navbar_fixed_main.htm">MCQ</a></li>
+							<li class="active">New Question</li>
+						</ul>
+
+					</div>
+					<!-- /Content Breadcrumb -->
+				</div>
+				<!-- /page header -->
+
+
+				<!-- Content area -->
+				<div class="content">
+
+					<!-- Simple panel -->
+
+					<!-- Wizard with validation -->
+					<div class="panel panel-white">
+						<div class="panel-heading">
+							<h6 class="panel-title">New Question</h6>
+						</div>
+
+						<form class="stepy-callbacks" action="#">
+							<fieldset title="1">
+								<legend class="text-semibold">Select Section</legend>
+
+								<div class="row">
+								
+									<div class="col-md-6">
+										<div class="form-group">
+											<label>Select Class: <span class="text-danger">*</span></label>
+											<select name="position" data-placeholder="Select Class"
+												class="select required">
+												<option>
+													<optgroup label="Secondary">
+														<option value="1">Class 5</option>
+														<option value="1">Class 6</option>
+														<option value="1">Class 7</option>
+													</optgroup>
+													<optgroup label="Undergraduation">
+														<option value="1">Class 11</option>
+														<option value="1">Class 12</option>
+													</optgroup>
+													<optgroup label="Graduation">
+														<option value="1">Computer Science</option>
+														<option value="1">Informaion Technology</option>
+													</optgroup>
+													<optgroup label="Other">
+														<option value="1">Other</option>
+													</optgroup>
+											</select>
+										</div>
+									</div>
+									
+									<div class="col-md-6">
+										<div class="form-group">
+											<label>Select Subject: <span class="text-danger">*</span></label>
+											<select name="location" data-placeholder="Select Subject"
+												class="select required">
+												<option>
+													<optgroup label="North America">
+														<option value="1">Software Engineering</option>
+														<option value="2">Java</option>
+													</optgroup>
+											</select>
+										</div>
+									</div>
+
+									
+									
+									<div class="col-md-6">
+										<div class="form-group">
+											<label>Select Chapter: <span class="text-danger">*</span></label>
+											<select name="location" data-placeholder="Select Chapter"
+												class="select required">
+												<option>
+													<optgroup label="Chapter">
+														<option value="1">Chapter 1</option>
+														<option value="2">Chapter 2</option>
+													</optgroup>
+											</select>
+										</div>
+									</div>
+									
+									<div class="col-md-6">
+										<div class="form-group">
+											<label>Select Section: <span class="text-danger">*</span></label>
+											<select name="location" data-placeholder="Select Section"
+												class="select required">
+												<option>
+													<optgroup label="North America">
+														<option value="1">Section 1</option>
+														<option value="2">Section 2</option>
+													</optgroup>
+											</select>
+										</div>
+									</div>
+								</div>
+
+
+
+
+							</fieldset>
+
+							<fieldset title="2">
+								<legend class="text-semibold">Content</legend>
+
+								<div class="row">
+									<div class="col-md-12">
+										<div class="summernote-airmode" id="question"></div>
+									</div>
+								</div>
+
+							</fieldset>
+
+							 
+
+							<fieldset title="3">
+								<legend class="text-semibold">Summary</legend>
+
+								<div class="row">
+									<div class="col-md-3">
+										<div class="form-group" style="font-size: medium;">
+											<span class="label border-right-success label-striped label-striped-right">Class</span>
+											<label id="subject" style="font-size: small;color: gray;">Class 2</label>
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="form-group" style="font-size: medium;">
+											<span class="label border-right-success label-striped label-striped-right">Subject</span>
+											<label id="subject" style="font-size: small;color: gray;">English</label>
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="form-group" style="font-size: medium;">
+											<span class="label border-right-success label-striped label-striped-right">Chapter</span>
+											<label id="subject" style="font-size: small;color: gray;">Chapter 1</label>
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="form-group" style="font-size: medium;">
+											<span class="label border-right-success label-striped label-striped-right">Section</span>
+											<label id="subject" style="font-size: small;color: gray;">Section 2</label>
+										</div>
+									</div>
+									
+								</div>
+								
+								 
+								
+								 <div class="panel panel-flat">
+									<div class="panel-heading">
+										<h5 class="panel-title">This is a sample Content !!</h5>
+									</div>
+			 
+									 
+								</div>
+									
+
+										 
+							</fieldset>
+
+
+
+							<button type="submit" class="btn btn-primary stepy-finish">
+								Submit <i class="icon-check position-right"></i>
+							</button>
+						</form>
+					</div>
+					<!-- /wizard with validation -->
+
+
+					<!-- Footer -->
+					<% include ../../../common/lightfooter_adm.htm %>
+					<!-- /footer -->
+
+				</div>
+				<!-- /content area -->
+
+			</div>
+			<!-- /main content -->
+
+		</div>
+		<!-- /page content -->
+
+	</div>
+	<!-- /page container -->
+
+</body>
+
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		//alert(" $('.summernote-airmode') "+$('.summernote-airmode'));
+		$('.summernote-airmode').summernote({
+			airMode: true,
+			height: 50,
+			minHeight :50
+		});
+	});
+
+	//Stepy callbacks
+	$(".stepy-callbacks").stepy({
+		next : function(index) {
+			//alert('Going to step: ' + index);
+			if (index === 3) {
+				$('.summernote-airmode').summernote({
+					airMode: true,
+					height: 50,
+					minHeight :50
+				});
+			}
+			
+		},
+		back : function(index) {
+			//alert('Returning to step: ' + index);
+		},
+		finish : function() {
+			//alert('Submit canceled.');
+			return false;
+		}
+	});
+</script>
+</html>

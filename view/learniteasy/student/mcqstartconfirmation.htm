@@ -1,0 +1,157 @@
+
+<!doctype html>
+<html lang="">
+
+<head><% include ../common/head.htm %>
+
+</head>
+
+<body>
+	<!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+	<!-- Add your site or application content here -->
+	<div id="wrapper">
+		<!-- Header Area Start Here -->
+		<header>
+			<div id="header2" class="header2-area"><% include
+				../common/topbar.htm %> <% include ../common/mainmenu.htm %></div>
+			<!-- Mobile Menu Area Start -->
+			<div class="mobile-menu-area"><% include
+				../common/mobilemenu.htm %></div>
+			<!-- Mobile Menu Area End -->
+		</header>
+		<!-- Header Area End Here -->
+		<!-- Inner Page Banner Area Start Here -->
+		<div class="inner-page-banner-area"
+			style="background-image: url('img/banner/5.jpg');">
+			<div class="container">
+				<div class="pagination-area">
+					<h1>MCQ Confirmation</h1>
+					<ul>
+						<li><a href="#">Home</a> -</li>
+						<li>Confirm</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- Inner Page Banner Area End Here -->
+		<!-- Account Page Start Here -->
+		<div class="section-space accent-bg">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 col-md-12 col-sm-8 col-xs-12 form-horizontal" style="background-color: white;">
+						<form class="form-horizontal" id="checkout-form">
+							<div class="profile-details tab-content"
+								style="padding-left: 20px; padding-right: 20px;">
+								<div class="tab-pane fade active in" id="Personal">
+									<h3 class="title-section title-bar-high mb-40">MCQ
+										Information</h3>
+									<div class="personal-info">
+										<div class="form-group">
+											<label class="col-sm-4 control-label">Subject</label>
+											<div class="col-sm-8">
+												<label class="col-sm-8 control-label">MCQ Subject</label>
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="col-sm-4 control-label">Section</label>
+											<div class="col-sm-8">
+												<label class="col-sm-8 control-label">MCQ Section</label>
+											</div>
+										</div>
+										<!-- <div class="form-group">
+											 <label class="col-sm-3 control-label">Select Option</label>
+											 <div class="col-sm-3">
+											 	<label class="customcontainerradio">Two
+												<input type="radio" id="test" name="test">
+												 <span class="checkmarkradio"></span>
+												</label>
+												
+											</div>
+											<div class="col-sm-3">
+											 	<label class="customcontainerradio">Two
+												<input type="radio" id="test" name="test">
+												 <span class="checkmarkradio"></span>
+												</label>
+												
+											</div>
+											 
+										</div>
+										
+										<div class="form-group">
+											 <label class="col-sm-3 control-label">Select Option</label>
+											 <div class="col-sm-3">
+											 	<label class="customcontainercheckbox">Two
+												<input type="checkbox" id="test" name="test">
+												 <span class="checkmarkcheckbox"></span>
+												</label>
+												
+											</div>
+											<div class="col-sm-3">
+											 	<label class="customcontainercheckbox">Two
+												<input type="checkbox" id="test" name="test">
+												 <span class="checkmarkcheckbox"></span>
+												</label>
+												
+											</div>
+											 
+										</div> -->
+
+										<div class="form-group">
+											<label class="col-sm-4 control-label">No of Questions</label>
+											<div class="col-sm-8">
+												<div class="custom-select">
+													<select id="country" class='select2'>
+														<option value="5">5</option>
+														<option value="10">10</option>
+														<option value="25">25</option>
+														<option value="50">50</option>
+														<option value="80">80</option>
+														<option value="100">100</option>
+													</select>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</form>
+						<div class="col-lg-12 col-md-12 col-sm-8 col-xs-12">
+						<div class="row">
+							<div class="form-group">
+
+								<div class="col-sm-6">
+									<a href="/mcq"><button class="view-all-accent-btn col-sm-3 active"
+										style="float: left;" type="button" value="Login">Start</button></a>
+								</div>
+								<div class="col-sm-6">
+									<button class="default-white-btn col-sm-3"
+										style="float: right;" type="button" value="Login">Cancel</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					</div>
+
+					 
+					
+
+				</div>
+			</div>
+		</div>
+		<!-- Account Page End Here -->
+		<!-- Footer Area Start Here -->
+		<% include ../common/footer.htm %>
+		<!-- Footer Area End Here -->
+	</div>
+	<!-- Preloader Start Here -->
+	<div id="preloader"></div>
+	<!-- Preloader End Here -->
+	<!-- jquery-->
+	<% include ../common/jsinclude.htm %>
+
+</body>
+
+</html>

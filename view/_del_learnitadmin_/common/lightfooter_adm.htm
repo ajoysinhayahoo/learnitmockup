@@ -1,0 +1,22 @@
+<div class="footer text-muted text-center">
+	&copy; 2017. <a href="#">Zimasol Consulting Private Limited</a> by <a
+		href="http://www.zimasol.com" target="_blank">Zimasol</a>
+</div>
+
+<script type="text/javascript">
+	 
+     var pathname = window.location.pathname;
+     var pathelementid = pathname.substring(pathname.lastIndexOf("/")+1,pathname.length);
+      
+     $('ul li').each(function(){
+    	  var t = $(this);
+    	  var idofelement = t.attr('id');
+    	  if (idofelement === pathelementid) {
+    		  t.addClass('active');
+    		  t.parent().addClass('active');
+    	  } else {
+    		  t.removeClass('active');
+    	  }
+    });
+ 
+</script>

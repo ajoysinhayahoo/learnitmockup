@@ -1,0 +1,382 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+<title>simplestyle_7</title>
+<meta name="description" content="website description" />
+<meta name="keywords" content="website keywords, website keywords" />
+<meta http-equiv="content-type"
+	content="text/html; charset=windows-1252" />
+<link rel="stylesheet" type="text/css"
+	href="http://fonts.googleapis.com/css?family=Tangerine&amp;v1" />
+<link rel="stylesheet" type="text/css"
+	href="http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" />
+<link rel="stylesheet" type="text/css" href="style/style.css" />
+
+<!-- Theme color -->
+<link id="switcher" href="contenttest/assets/css/materialize.min.css"
+	rel="stylesheet">
+
+<!-- Theme color -->
+<link id="switcher" href="contenttest/assets/css/ghpages-materialize.css"
+	rel="stylesheet">
+
+<script type="text/javascript" src="assets/learniteasy/vendor/lineprogressbar/jquery.lineProgressbar.css"></script>
+
+<link href="http://fonts.googleapis.com/icon?family=Material+Icons"
+	rel="stylesheet">
+</head>
+
+<style type="text/css">
+
+    .progress
+    {
+        display:none;
+        position:relative;
+        width:400px;
+        border: 1px solid #ddd;
+        padding: 1px;
+        border-radius: 3px;
+    }
+    .bar
+    {
+        background-color: #B4F5B4;
+        width:0%;
+        height:20px;
+        border-radius: 3px;
+    }
+    .percent
+    {
+        position:absolute;
+        display:inline-block;
+        top:3px;
+        left:48%;
+    }
+
+</style>
+
+<body>
+	<div id="main">
+		<div id="header">
+			<div id="logo"></div>
+			<div id="menubar">
+				<!-- <ul id="menu">
+					put class="current" in the li tag for the selected page - to highlight which page you're on
+					<li class="current"><a href="/home">Home</a></li>
+					<li><a href="/addupload">Add Upload</a></li>
+					<li><a href="/addprovider">Add Provider</a></li>
+					<li><a href="/addscreens">Add Screen</a></li>
+					<li><a href="/addposition">Add Position</a></li>
+					<li><a href="/contact">Contact Us</a></li>
+				</ul> -->
+			</div>
+		</div>
+		<div id="site_content">
+			<!-- <div id="sidebar_container">
+				<img class="paperclip" src="style/paperclip.png" alt="paperclip" />
+				<div class="sidebar">
+					insert your sidebar items here
+					<h3>Latest News</h3>
+					<h4>What's the News?</h4>
+					<h5>1st July 2011</h5>
+					<p>
+						Put your latest news item here, or anything else you would like in
+						the sidebar!<br />
+						<a href="#">Read more</a>
+					</p>
+				</div>
+				<img class="paperclip" src="style/paperclip.png" alt="paperclip" />
+				<div class="sidebar">
+					<h3>Newsletter</h3>
+					<p>If you would like to receive our newletter, please enter
+						your email address and click 'Subscribe'.</p>
+					<form method="post" action="#" id="subscribe">
+						<p style="padding: 0 0 9px 0;">
+							<input class="search" type="text" name="email_address"
+								value="your email address"
+								onclick="javascript: document.forms['subscribe'].email_address.value=''" />
+						</p>
+						<p>
+							<input class="subscribe" name="subscribe" type="submit"
+								value="Subscribe" />
+						</p>
+					</form>
+				</div>
+				<img class="paperclip" src="style/paperclip.png" alt="paperclip" />
+				<div class="sidebar">
+					<h3>Latest Blog</h3>
+					<h4>Website Goes Live</h4>
+					<h5>1st July 2011</h5>
+					<p>
+						We have just launched our new website. Take a look around, we'd
+						love to know what you think.....<br />
+						<a href="#">read more</a>
+					</p>
+				</div>
+			</div> -->
+			<div id="content">
+
+				<form class="col s12" id ="uploadForm" enctype="multipart/form-data">
+
+					<div class="row">
+
+						<div class="file-field input-field">
+							<div class="btn">
+								<span>ADD Video</span> <input type="file" name="videofile" id="videofile">
+							</div>
+							<div class="file-path-wrapper">
+								<input class="file-path validate" type="text">
+							</div>
+						</div>
+
+						<div class="row">
+							<img class="materialboxed" id="imageid" width="100" src="">
+						</div>
+						
+						<div class="row">
+							<a href="#"  id="deletevideo" onclick="deleteUploadedVideoImage();"><img width="24" height="24" src="contenttest/assets/images/delete.png"></a>
+						</div>
+
+                        <br>
+
+
+
+                        <!--<div class="progress">
+                            <div class="bar"></div >
+                            <div class="percent">0%</div >
+                        </div>
+
+                        <div id="status"></div>
+-->
+                        <br>
+
+						<button class="btn waves-effect waves-light floatright"
+							type="button" name="uploadimage" id="uploadimage">
+							Submit <i class="material-icons right">send</i>
+						</button>
+
+
+
+					</div>
+
+				</form>
+
+                <div id="progressbar1"></div>
+
+			</div>
+		</div>
+		
+	</div>
+
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<!-- Bootstrap -->
+	<script src="contenttest/assets/js/bootstrap.js"></script>
+	<!-- Slick Slider -->
+	<script type="text/javascript" src="contenttest/assets/js/slick.js"></script>
+	<!-- Counter -->
+	<script type="text/javascript" src="contenttest/assets/js/waypoints.js"></script>
+	<script type="text/javascript" src="contenttest/assets/js/jquery.counterup.js"></script>
+	<!-- mixit slider -->
+	<script type="text/javascript" src="contenttest/assets/js/jquery.mixitup.js"></script>
+	<!-- Add fancyBox -->
+	<script type="text/javascript" src="contenttest/assets/js/jquery.fancybox.pack.js"></script>
+	<!-- Wow animation -->
+	<script type="text/javascript" src="contenttest/assets/js/wow.js"></script>
+
+	<!-- Custom js -->
+	<script type="text/javascript" src="contenttest/assets/js/custom.js"></script>
+
+	<!-- Custom js -->
+	<script type="text/javascript" src="contenttest/assets/js/materialize.min.js"></script>
+
+    <script type="text/javascript" src="assets/learniteasy/vendor/lineprogressbar/jquery.lineProgressbar.js"></script>
+
+	
+	<script type="text/javascript">
+	
+	var imageid = "";
+
+    $( document ).ready(function() {
+        console.log( "ready!" );
+        $('#progressbar1').LineProgressbar({
+            percentage: 0,
+            ShowProgressCount: false,
+            height: '20px',
+
+        });
+    });
+
+	var deleteUploadedVideoImage = function () {
+		
+		 alert("deleteUploadedImage");
+		 var jsonadata = {imageidtodelete : imageid};
+		 alert(JSON.stringify(jsonadata));
+		 
+		 $.ajax({
+				contentType : "application/json",
+				type : "POST",
+				headers : {
+					Accept : "application/json",
+					"Access-Control-Allow-Origin" : "*"
+				},
+		        url: 'http://127.0.0.1:8181/deleteimage',
+		        data: JSON.stringify(jsonadata),
+		        dataType : "json",
+				crossDomain : true,
+		        success: function(data) {
+		        	var obj = JSON.parse(data);
+		        	alert(obj);
+		        },
+		        error: function(data) {
+	                alert("file not uploaded");
+	        	}
+		    });
+	}
+	
+	$('button#uploadimage').click( function() {
+        //alert("UploadedImage");
+
+        var bar = $('#bar1');
+        var percent = $('#percent1');
+
+        //alert("$(\"#videofile\")"+$("#videofile"));
+
+        var file = $("#videofile")[0];
+
+	    $.ajax({
+            xhr: function() {
+                var xhr = new window.XMLHttpRequest();
+
+                //alert(file);
+                if (xhr.upload) {
+
+                    var percentVal = 0;
+
+
+
+                }
+
+
+
+                xhr.upload.addEventListener("progress", function(evt) {
+
+                    if (evt.lengthComputable) {
+                        var percentComplete = evt.loaded / evt.total;
+                        percentComplete = parseInt(percentComplete * 100);
+
+                        if (percentComplete % 10 == 0) {
+                            $('#progressbar1').LineProgressbar({
+                                percentage: percentComplete,
+                                ShowProgressCount: false,
+                                height: '20px',
+                                duration : "slow"
+                            });
+                        }
+
+                        //alert("a");
+
+                        //$('#progress').css('backgroundPosition', percentComplete + " 0" )
+
+                        //alert("b");
+                        console.log(percentComplete);
+
+                        if (percentComplete === 100) {
+                                alert("File has been uploaded")
+                        }
+
+                    }
+                }, false);
+
+                xhr.onreadystatechange = function(e) {
+                    if (xhr.readyState == 4) {
+                        progress.className = (xhr.status == 200 ? "success" : "failure");
+                    }
+                };
+
+                return xhr;
+            },
+	        url: 'http://127.0.0.1:8181/api/uploadvideo',
+            //url: 'http://127.0.0.1:8181/s',
+	        type: 'post',
+	        data: new FormData($('form#uploadForm')[0]),
+            //data: {name: "TEST", size: "12345", type:"TXT"},
+	        processData: false,
+	        contentType: false,
+	        multiple: true,
+	        success: function(data) {
+	        	alert();
+                var obj = JSON.parse(data);
+	        	console.log(JSON.stringify(obj));
+	        	//console.log(JSON.stringify(obj.extras));
+	        	//var newSrc = "/findimage/"+obj.extras._id;
+	        	//$('img[id="imageid"]').attr('src', newSrc);
+
+	        	//imageid = obj.extras._id;
+	         
+	        },
+	        failure: function(data) {
+                alert("file not uploaded");
+        	}
+	    });
+	});
+	
+	/* $('#deleteimage').click( function() {
+		
+		 alert("hi");
+		 var jsonadata = {imageidtodelete : imageid};
+		 
+		 $.ajax({
+		        url: 'http://127.0.0.1:8181/deleteimage',
+		        type: 'post',
+		        data: JSON.stringify(jsonadata),
+		        processData: false,
+		        contentType: false,
+		        success: function(data) {
+		        	var obj = JSON.parse(data);
+		        	 alert(obj);
+		        },
+		        failure: function(data) {
+	                alert("file not uploaded");
+	        	}
+		    });
+	}); */
+
+
+	/*
+
+	$(function () {
+	$('#fileupload').fileupload({
+		dataType: 'json',
+		add: function (e, data) {
+			$.each(data.files, function (index, file) {
+				data.context = $('<p/>').text('Uploading...').appendTo(document.body);
+				$.ajax({
+					url: '/s',
+					type: 'POST',
+					data: {name: file.name, size: file.size, type:file.type},
+				}).success(function(res){
+					$.ajax({
+						url: res.url,
+						type: 'PUT',
+						data: file,
+						processData: false,
+  						contentType: file.type,
+					}).success(function(res){
+						console.log('Done');
+					});
+					$('<p/>').text(file.name).appendTo(document.body);
+				}).error(function(){
+					console.log("error");
+				});
+			});
+		}
+	});
+});
+
+	 */
+	
+	</script>
+</body>
+</html>

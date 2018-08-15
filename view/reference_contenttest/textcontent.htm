@@ -1,0 +1,140 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+<title>Text Content</title>
+<meta name="description" content="website description" />
+<meta name="keywords" content="website keywords, website keywords" />
+<meta http-equiv="content-type"  content="text/html; charset=windows-1252" />
+
+<link href="assets/css/bootstrap.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css"  href="http://fonts.googleapis.com/css?family=Tangerine&amp;v1" />
+<link rel="stylesheet" type="text/css"  href="http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" />
+<link rel="stylesheet" type="text/css" 	href="style/style.css" />
+
+<!-- Theme color -->
+<link type="text/css"  href="assets/css/materialize.min.css"  rel="stylesheet">
+
+<!-- Theme color -->
+<link type="text/css"  href="assets/css/ghpages-materialize.css" rel="stylesheet">
+<link type="text/css"  href="assets/learniteasy/vendor/summernote/dist/summernote.css" rel="stylesheet">
+
+<!-- Editor for Math Content-->
+<link type="text/css"  href="assets/learniteasy/vendor/jqmath/jqmath-0.4.3.css" rel="stylesheet">
+
+<link href="http://fonts.googleapis.com/icon?family=Material+Icons"
+	rel="stylesheet">
+</head>
+
+<style type="text/css">
+
+
+</style>
+
+<body>
+	<div id="main">
+			<div id="content">
+
+				<form class="col s12" id ="uploadForm" enctype="multipart/form-data">
+
+                    <div id="summernote"><p>Hello Summernote</p></div>
+
+					<div class="row">
+
+                        <br>
+
+                        <br>
+
+						<button class="btn waves-effect waves-light floatright" type="button" name="uploadcontent" id="uploadcontent">Submit <i class="material-icons right">send</i></button>
+
+					</div>
+
+				</form>
+                <div><p>Question :</p></div><div id="Question"></div>
+			</div>
+
+            <br>
+            <div><p>Content Stored :</p></div><div id="displaycontent"></div>
+		</div>
+		
+	</div>
+
+    <script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/bootstrap.js"></script>
+    <script src="assets/learniteasy/vendor/summernote/dist/summernote.js"></script>
+    <!-- JS for JQMath-->
+    <script src="assets/learniteasy/vendor/summernote/dist/summernote.js"></script>
+
+	<script type="text/javascript">
+
+        $(document).ready(function() {
+            $('#summernote').summernote({
+                callbacks: {
+                    onChange: function(contents, $editable) {
+                        $('#Question').html(contents);
+                    }
+                }
+            });
+
+            alert("Hi");
+            getContent();
+        });
+
+        $('button#uploadcontent').click( function() {
+
+            var textValue = $('#summernote').eq(0).summernote('code');
+            //alert(textValue);
+
+            var jsonadata = {text : textValue};
+
+            $.ajax({
+                contentType : "application/json",
+                type : "POST",
+                headers : {
+                    Accept : "application/json",
+                    "Access-Control-Allow-Origin" : "*"
+                },
+                url: 'http://127.0.0.1:8181/api/createtextcontent',
+                data: JSON.stringify(jsonadata),
+                dataType : "json",
+                crossDomain : true,
+                success: function(data) {
+                    var obj = JSON.parse(data);
+                    alert(obj);
+                },
+                error: function(data) {
+                    alert("file not uploaded");
+                }
+            });
+        })
+
+
+        var getContent = function () {
+
+            var jsonadata = {};
+
+            $.ajax({
+                contentType : "application/json",
+                type : "POST",
+                headers : {
+                      Accept : "application/json",
+                      "Access-Control-Allow-Origin" : "*"
+                },
+                url: 'http://127.0.0.1:8181/api/getcontent/5b0fd8ffbbc2fa33dcb8293d',
+                data: JSON.stringify(jsonadata),
+                dataType : "json",
+                crossDomain : true,
+                success: function(data) {
+                    //var obj = JSON.parse(data);
+                    $('#displaycontent').html(data.extras.text);
+                },
+                error: function(data) {
+                    alert("file not uploaded");
+                }
+            });
+        }
+
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,602 @@
+
+<!doctype html>
+<html lang="">
+
+<head><% include ../common/head.htm %>
+</head>
+
+<body>
+	<!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+	<!-- Add your site or application content here -->
+	<!-- Preloader Start Here -->
+	<div id="preloader"></div>
+	<!-- Preloader End Here -->
+	<!-- Main Body Area Start Here -->
+	<div id="wrapper">
+		<!-- Header Area Start Here -->
+		<header>
+			<div id="header3" class="header3-area"><% include
+				../common/topbar.htm %> <% include ../common/mainmenu.htm %></div>
+			<!-- Mobile Menu Area Start -->
+			<div class="mobile-menu-area"><% include
+				../common/mobilemenu.htm %></div>
+			<!-- Mobile Menu Area End -->
+		</header>
+		<!-- Header Area End Here -->
+		<!-- Inner Page Banner Area Start Here -->
+		<div class="inner-page-banner-area"
+			style="background-image: url('img/banner/5.jpg');">
+			<div class="container">
+				<div class="pagination-area">
+					<h1>Personal Account</h1>
+					<ul>
+						<li><a href="#">Home</a> -</li>
+						<li>Account</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- Inner Page Banner Area End Here -->
+		<!-- Account Page Start Here -->
+		<div class="section-space accent-bg">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+						<ul class="profile-title">
+							<li class="active"><a href="#Personal" data-toggle="tab"
+								aria-expanded="false">Profile</a></li>
+							<li><a href="#courses" data-toggle="tab"
+								aria-expanded="false">My Courses</a></li>
+							<!-- <li><a href="#Badges" data-toggle="tab" aria-expanded="false">Orders</a></li>
+                            <li><a href="#E-mail" data-toggle="tab" aria-expanded="false">Wishlist</a></li> -->
+						</ul>
+					</div>
+					<div class="col-lg-9 col-md-9 col-sm-8 col-xs-12">
+						<form class="form-horizontal" id="checkout-form">
+							<div class="profile-details tab-content"
+								style="padding-left: 20px; padding-right: 20px;">
+								<div class="tab-pane fade active in" id="Personal">
+									<h3 class="title-section title-bar-high mb-40">Personal
+										Information</h3>
+									<div class="personal-info">
+										<div class="form-group">
+											<label class="col-sm-3 control-label">User Name</label>
+											<div class="col-sm-9">
+												<textarea class="form-control" id="first-name" type="text"
+													rows="5"></textarea>
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="col-sm-3 control-label">First Name</label>
+											<div class="col-sm-9">
+												<input class="form-control" id="first-name" type="text">
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="col-sm-3 control-label">Last Name</label>
+											<div class="col-sm-9">
+												<input class="form-control" id="last-name" type="text">
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="col-sm-3 control-label">Email ID</label>
+											<div class="col-sm-9">
+												<input class="form-control" id="nick-name" type="text">
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="col-sm-3 control-label">College</label>
+											<div class="col-sm-9">
+												<input class="form-control" id="last-name" type="text">
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="col-sm-3 control-label">Dicipline</label>
+											<div class="col-sm-9">
+												<input class="form-control" id="last-name" type="text">
+											</div>
+										</div>
+
+										<div class="form-group">
+											<label class="col-sm-3 control-label">Change Password</label>
+											<div class="col-sm-9">
+												<input class="form-control mb-10" id="last-name"
+													type="password" placeholder="Current Password"> <input
+													class="form-control mb-10" id="last-name" type="password"
+													placeholder="New Password"> <input
+													class="form-control mb-10" id="last-name" type="password"
+													placeholder="Repeat Password">
+											</div>
+										</div>
+										<div class="form-group mb-none">
+											<div class="col-sm-offset-3 col-sm-9">
+												<button class="view-all-accent-btn disabled col-sm-9"
+													type="submit" value="Login">Save</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+								
+								<div class="tab-pane fade" id="courses">
+									<!-- <div class="courses-page-area1"> -->
+										<!-- <div class="container">
+											<div class="row"> -->
+												<!-- <div
+													class="col-lg-12 col-md-12 col-sm-12 col-xs-12"> -->
+													<!-- <div class="row">
+														<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+															<div class="courses-page-top-area">
+																<div class="courses-page-top-left">
+																	<p>Showing 13-24 of 50 results</p>
+																</div>
+																<div class="courses-page-top-right">
+																	<ul>
+																		<li class="active"><a href="#gried-view"
+																			data-toggle="tab" aria-expanded="false"><i
+																				class="fa fa-th-large"></i></a></li>
+																		<li><a href="#list-view" data-toggle="tab"
+																			aria-expanded="true"><i class="fa fa-list"></i></a></li>
+																	</ul>
+																</div>
+															</div>
+														</div>
+													</div> -->
+													<div class="row">
+														<!-- Tab panes -->
+														<div class="tab-content">
+															<div role="tabpanel" class="tab-pane active"
+																id="gried-view">
+																<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+																	<div class="courses-box1">
+																		<div class="single-item-wrapper">
+																			<div class="courses-img-wrapper hvr-bounce-to-bottom">
+																				<img class="img-responsive"
+																					src="assets\learniteasy\img\course\1.jpg"
+																					alt="courses"> <a href="#"><i
+																					class="fa fa-link" aria-hidden="true"></i></a>
+																			</div>
+																			<div class="courses-content-wrapper">
+																				<h3 class="item-title">
+																					<a href="#">Basic Philosopphy</a>
+																				</h3>
+																				<p class="item-content">Rmply dummy text
+																					printing setting industry it’s free demo.</p>
+																				<ul class="courses-info">
+																					<li>7 Months <br>
+																					<span> Course</span></li>
+																					<li>30 <br>
+																					<span> Classes</span></li>
+																					<li>10 pm - 11 pm <br>
+																					<span> Classes</span></li>
+																				</ul>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+																	<div class="courses-box1">
+																		<div class="single-item-wrapper">
+																			<div class="courses-img-wrapper hvr-bounce-to-bottom">
+																				<img class="img-responsive"
+																					src="assets\learniteasy\img\course\1.jpg"
+																					alt="courses"> <a href="#"><i
+																					class="fa fa-link" aria-hidden="true"></i></a>
+																			</div>
+																			<div class="courses-content-wrapper">
+																				<h3 class="item-title">
+																					<a href="#">Basic Philosopphy</a>
+																				</h3>
+																				<p class="item-content">Rmply dummy text
+																					printing setting industry it’s free demo.</p>
+																				<ul class="courses-info">
+																					<li>7 Months <br>
+																					<span> Course</span></li>
+																					<li>30 <br>
+																					<span> Classes</span></li>
+																					<li>10 pm - 11 pm <br>
+																					<span> Classes</span></li>
+																				</ul>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+																	<div class="courses-box1">
+																		<div class="single-item-wrapper">
+																			<div class="courses-img-wrapper hvr-bounce-to-bottom">
+																				<img class="img-responsive"
+																					src="assets\learniteasy\img\course\1.jpg"
+																					alt="courses"> <a href="#"><i
+																					class="fa fa-link" aria-hidden="true"></i></a>
+																			</div>
+																			<div class="courses-content-wrapper">
+																				<h3 class="item-title">
+																					<a href="#">Basic Philosopphy</a>
+																				</h3>
+																				<p class="item-content">Rmply dummy text
+																					printing setting industry it’s free demo.</p>
+																				<ul class="courses-info">
+																					<li>7 Months <br>
+																					<span> Course</span></li>
+																					<li>30 <br>
+																					<span> Classes</span></li>
+																					<li>10 pm - 11 pm <br>
+																					<span> Classes</span></li>
+																				</ul>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+																	<div class="courses-box1">
+																		<div class="single-item-wrapper">
+																			<div class="courses-img-wrapper hvr-bounce-to-bottom">
+																				<img class="img-responsive"
+																					src="assets\learniteasy\img\course\1.jpg"
+																					alt="courses"> <a href="#"><i
+																					class="fa fa-link" aria-hidden="true"></i></a>
+																			</div>
+																			<div class="courses-content-wrapper">
+																				<h3 class="item-title">
+																					<a href="#">Basic Philosopphy</a>
+																				</h3>
+																				<p class="item-content">Rmply dummy text
+																					printing setting industry it’s free demo.</p>
+																				<ul class="courses-info">
+																					<li>7 Months <br>
+																					<span> Course</span></li>
+																					<li>30 <br>
+																					<span> Classes</span></li>
+																					<li>10 pm - 11 pm <br>
+																					<span> Classes</span></li>
+																				</ul>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+																	<div class="courses-box1">
+																		<div class="single-item-wrapper">
+																			<div class="courses-img-wrapper hvr-bounce-to-bottom">
+																				<img class="img-responsive"
+																					src="assets\learniteasy\img\course\1.jpg"
+																					alt="courses"> <a href="#"><i
+																					class="fa fa-link" aria-hidden="true"></i></a>
+																			</div>
+																			<div class="courses-content-wrapper">
+																				<h3 class="item-title">
+																					<a href="#">Basic Philosopphy</a>
+																				</h3>
+																				<p class="item-content">Rmply dummy text
+																					printing setting industry it’s free demo.</p>
+																				<ul class="courses-info">
+																					<li>7 Months <br>
+																					<span> Course</span></li>
+																					<li>30 <br>
+																					<span> Classes</span></li>
+																					<li>10 pm - 11 pm <br>
+																					<span> Classes</span></li>
+																				</ul>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+																	<div class="courses-box1">
+																		<div class="single-item-wrapper">
+																			<div class="courses-img-wrapper hvr-bounce-to-bottom">
+																				<img class="img-responsive"
+																					src="assets\learniteasy\img\course\1.jpg"
+																					alt="courses"> <a href="#"><i
+																					class="fa fa-link" aria-hidden="true"></i></a>
+																			</div>
+																			<div class="courses-content-wrapper">
+																				<h3 class="item-title">
+																					<a href="#">Basic Philosopphy</a>
+																				</h3>
+																				<p class="item-content">Rmply dummy text
+																					printing setting industry it’s free demo.</p>
+																				<ul class="courses-info">
+																					<li>7 Months <br>
+																					<span> Course</span></li>
+																					<li>30 <br>
+																					<span> Classes</span></li>
+																					<li>10 pm - 11 pm <br>
+																					<span> Classes</span></li>
+																				</ul>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																 
+																 
+															</div>
+															<!-- Listed product show -->
+															<div role="tabpanel" class="tab-pane" id="list-view">
+																<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+																	<div class="courses-box3">
+																		<div class="single-item-wrapper">
+																			<div class="courses-img-wrapper hvr-bounce-to-right">
+																				<img class="img-responsive"
+																					src="assets\learniteasy\img\course\1.jpg"
+																					alt="courses"> <a href="#"><i
+																					class="fa fa-link" aria-hidden="true"></i></a>
+																			</div>
+																			<div class="courses-content-wrapper">
+																				<h3 class="item-title">
+																					<a href="#">GMAT</a>
+																				</h3>
+																				<p class="item-content">Rmply dummy text
+																					printing setting industry iLorem ipsum dolor sit
+																					consectetuer adipiscing elit et diam nonummy.t’s
+																					free demo.</p>
+																				<ul class="courses-info">
+																					<li>1 Year <br>
+																					<span> Course</span></li>
+																					<li>15 <br>
+																					<span> Classes</span></li>
+																					<li>05 pm - 07 pm <br>
+																					<span> Time</span></li>
+																				</ul>
+																				<div class="courses-fee">$400</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+																	<div class="courses-box3">
+																		<div class="single-item-wrapper">
+																			<div class="courses-img-wrapper hvr-bounce-to-right">
+																				<img class="img-responsive"
+																					src="assets\learniteasy\img\course\2.jpg"
+																					alt="courses"> <a href="#"><i
+																					class="fa fa-link" aria-hidden="true"></i></a>
+																			</div>
+																			<div class="courses-content-wrapper">
+																				<h3 class="item-title">
+																					<a href="#">IELTS</a>
+																				</h3>
+																				<p class="item-content">Rmply dummy text
+																					printing setting industry iLorem ipsum dolor sit
+																					consectetuer adipiscing elit et diam nonummy.t’s
+																					free demo.</p>
+																				<ul class="courses-info">
+																					<li>2 Months <br>
+																					<span> Course</span></li>
+																					<li>15 <br>
+																					<span> Classes</span></li>
+																					<li>08 pm - 09 pm <br>
+																					<span> Time</span></li>
+																				</ul>
+																				<div class="courses-fee">$800</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+																	<div class="courses-box3">
+																		<div class="single-item-wrapper">
+																			<div class="courses-img-wrapper hvr-bounce-to-right">
+																				<img class="img-responsive"
+																					src="assets\learniteasy\img\course\3.jpg"
+																					alt="courses"> <a href="#"><i
+																					class="fa fa-link" aria-hidden="true"></i></a>
+																			</div>
+																			<div class="courses-content-wrapper">
+																				<h3 class="item-title">
+																					<a href="#">Basic Philosopphy</a>
+																				</h3>
+																				<p class="item-content">Rmply dummy text
+																					printing setting industry iLorem ipsum dolor sit
+																					consectetuer adipiscing elit et diam nonummy.t’s
+																					free demo.</p>
+																				<ul class="courses-info">
+																					<li>6 Months <br>
+																					<span> Course</span></li>
+																					<li>15 <br>
+																					<span> Classes</span></li>
+																					<li>04 pm - 06 pm <br>
+																					<span> Time</span></li>
+																				</ul>
+																				<div class="courses-fee">$100</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+																	<div class="courses-box3">
+																		<div class="single-item-wrapper">
+																			<div class="courses-img-wrapper hvr-bounce-to-right">
+																				<img class="img-responsive"
+																					src="assets\learniteasy\img\course\10.jpg"
+																					alt="courses"> <a href="#"><i
+																					class="fa fa-link" aria-hidden="true"></i></a>
+																			</div>
+																			<div class="courses-content-wrapper">
+																				<h3 class="item-title">
+																					<a href="#">Graphic Design</a>
+																				</h3>
+																				<p class="item-content">Rmply dummy text
+																					printing setting industry iLorem ipsum dolor sit
+																					consectetuer adipiscing elit et diam nonummy.t’s
+																					free demo.</p>
+																				<ul class="courses-info">
+																					<li>2 Years <br>
+																					<span> Course</span></li>
+																					<li>15 <br>
+																					<span> Classes</span></li>
+																					<li>03 pm - 05 pm <br>
+																					<span> Time</span></li>
+																				</ul>
+																				<div class="courses-fee">$500</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+																	<div class="courses-box3">
+																		<div class="single-item-wrapper">
+																			<div class="courses-img-wrapper hvr-bounce-to-right">
+																				<img class="img-responsive"
+																					src="assets\learniteasy\img\course\11.jpg"
+																					alt="courses"> <a href="#"><i
+																					class="fa fa-link" aria-hidden="true"></i></a>
+																			</div>
+																			<div class="courses-content-wrapper">
+																				<h3 class="item-title">
+																					<a href="#">Diploma</a>
+																				</h3>
+																				<p class="item-content">Rmply dummy text
+																					printing setting industry iLorem ipsum dolor sit
+																					consectetuer adipiscing elit et diam nonummy.t’s
+																					free demo.</p>
+																				<ul class="courses-info">
+																					<li>10 Months <br>
+																					<span> Course</span></li>
+																					<li>15 <br>
+																					<span> Classes</span></li>
+																					<li>09 am - 11 am <br>
+																					<span> Time</span></li>
+																				</ul>
+																				<div class="courses-fee">$300</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+																	<div class="courses-box3">
+																		<div class="single-item-wrapper">
+																			<div class="courses-img-wrapper hvr-bounce-to-right">
+																				<img class="img-responsive"
+																					src="assets\learniteasy\img\course\12.jpg"
+																					alt="courses"> <a href="#"><i
+																					class="fa fa-link" aria-hidden="true"></i></a>
+																			</div>
+																			<div class="courses-content-wrapper">
+																				<h3 class="item-title">
+																					<a href="#">CSE</a>
+																				</h3>
+																				<p class="item-content">Rmply dummy text
+																					printing setting industry iLorem ipsum dolor sit
+																					consectetuer adipiscing elit et diam nonummy.t’s
+																					free demo.</p>
+																				<ul class="courses-info">
+																					<li>6 Months <br>
+																					<span> Course</span></li>
+																					<li>15 <br>
+																					<span> Classes</span></li>
+																					<li>05 pm - 07 pm <br>
+																					<span> Time</span></li>
+																				</ul>
+																				<div class="courses-fee">$600</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<!-- <div class="row">
+														<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+															<ul class="pagination-left">
+																<li class="active"><a href="#">1</a></li>
+																<li><a href="#">2</a></li>
+																<li><a href="#">3</a></li>
+																<li><a href="#">4</a></li>
+															</ul>
+														</div>
+													</div> -->
+												<!-- </div> -->
+
+											<!-- </div>
+										</div> -->
+									<!-- </div> -->
+								</div>
+								
+								<div class="tab-pane fade" id="Badges">
+									<h3 class="title-section title-bar-high mb-40">Orders</h3>
+									<div class="orders-info">
+										<div class="table-responsive">
+											<table class="table table-bordered table-responsive">
+												<thead>
+													<tr>
+														<th>Order</th>
+														<th>Date</th>
+														<th>Status</th>
+														<th>Total</th>
+														<th>Action</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<th>#00024564875</th>
+														<td>August 22, 2017</td>
+														<td>Completed</td>
+														<td>$70.00</td>
+														<td><a href="#" title="view" class="btn-view">View</a>
+														</td>
+													</tr>
+													<tr>
+														<th>#00024562451</th>
+														<td>March 01, 2017</td>
+														<td>Completed</td>
+														<td>$90.00</td>
+														<td><a href="#" title="view" class="btn-view">View</a>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+								<div class="tab-pane fade" id="E-mail">
+									<h3 class="title-section title-bar-high mb-40">Wishlist</h3>
+									<div class="wishlist-info">
+										<div class="table-responsive">
+											<table class="table table-bordered table-responsive">
+												<thead>
+													<tr>
+														<th>Thumb</th>
+														<th>Name</th>
+														<th>Duration</th>
+														<th>Classes</th>
+														<th>Time</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<th><img src="img\course\24.jpg" alt="course"
+															class="img-responsive"></th>
+														<td>Mathematics</td>
+														<td>7 Months</td>
+														<td>60</td>
+														<td>10 pm - 11 pm</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Account Page End Here -->
+		<!-- Footer Area Start Here -->
+
+		<% include ../common/footer.htm %>
+
+		<!-- Footer Area End Here -->
+	</div>
+
+	<% include ../common/jsinclude.htm %>
+
+
+</body>
+
+</html>

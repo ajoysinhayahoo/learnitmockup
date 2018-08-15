@@ -1,0 +1,83 @@
+{
+  "name": "OpenShift-Sample-App",
+  "version": "1.0.0",
+  "description": "Sample Application",
+  "keywords": [
+    "OpenShift",
+    "Node.js",
+    "application",
+    "openshift"
+  ],
+  "author": {
+    "name": "OpenShift",
+    "email": "ramr@example.org",
+    "url": "http://www.openshift.com/"
+  },
+  "homepage": "http://www.openshift.com/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/openshift/origin-server"
+  },
+  "engines": {
+    "node": "latest",
+    "npm": "latest"
+  },
+  "dependencies": {
+    "append-query": "latest",
+    "async": "latest",
+    "aws-sdk": "latest",
+    "bcrypt": "^2.0.1",
+    "bcrypt-nodejs": "latest",
+    "body-parser": "latest",
+    "connect": "latest",
+    "cookie-parser": "latest",
+    "cors": "latest",
+    "cron": "latest",
+    "ejs": "latest",
+    "exceljs": "latest",
+    "express": "latest",
+    "express-session": "latest",
+    "forever": "latest",
+    "graceful-fs": "latest",
+    "gridfs-stream": "latest",
+    "json-query": "latest",
+    "jsonwebtoken": "latest",
+    "jwt-simple": "latest",
+    "log4js": "latest",
+    "mailgun-js": "latest",
+    "method-override": "latest",
+    "microtime": "latest",
+    "mongoose": "latest",
+    "mongoose-auto-increment": "latest",
+    "mongoose-deep-populate": "latest",
+    "mongoose-random": "latest",
+    "mongoose-schema-extend": "latest",
+    "mongoose-text-search": "latest",
+    "morgan": "latest",
+    "multer": "latest",
+    "multer-s3": "latest",
+    "multiparty": "latest",
+    "nconf": "latest",
+    "node-cache": "latest",
+    "node-cron": "latest",
+    "node-uuid": "latest",
+    "nodemailer": "latest",
+    "nodemailer-mailgun-transport": "latest",
+    "msr": "latest",
+    "otp-generator": "latest",
+    "promise": "latest",
+    "q": "latest",
+    "request": "latest",
+    "string-template": "latest",
+    "uuid": "^3.2.1",
+    "util": "latest"
+  },
+  "devDependencies": {
+    "should": "latest",
+    "mocha": "latest",
+    "supertest": "latest"
+  },
+  "bundleDependencies": [],
+  "private": true,
+  "main": "learniteasy.js"
+}

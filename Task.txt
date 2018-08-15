@@ -1,0 +1,8 @@
+User Management - Ajoy
+
+1. Register User - Done
+2. Login - Done
+2. First Time Login
+3. Change Password - Done
+4. Logout User - Done
+5. Clean Sessions - Done

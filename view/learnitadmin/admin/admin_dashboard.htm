@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<% include ./common/admin_head.htm %>
+</head>
+
+<body class="navbar-top">
+
+	<!-- Main navbar -->
+	<div class="navbar navbar-inverse navbar-fixed-top">
+		
+		<% include ./common/admin_logo.htm %>
+		
+		<% include ./common/admin_topbar.htm %>
+		
+	</div>
+	<!-- /main navbar -->
+
+
+	<!-- Page container -->
+	<div class="page-container">
+
+		<!-- Page content -->
+		<div class="page-content">
+
+			<!-- Main sidebar -->
+			<div class="sidebar sidebar-main">
+				<div class="sidebar-content">
+
+					<!-- User menu -->
+					<% include ./nav/admin_usermenu.htm %>
+					<!-- /user menu -->
+
+
+					<!-- Main navigation -->
+					<% include ./nav/admin_mainnav.htm %>
+					<!-- /main navigation -->
+
+				</div>
+			</div>
+			<!-- /main sidebar -->
+
+
+			<!-- Main content -->
+			<div class="content-wrapper">
+
+				<!-- Page header -->
+				<div class="page-header page-header-default">
+					
+					<!-- Content Header -->
+					<div class="page-header-content">
+						<div class="page-title">
+							<h4><i class="icon-arrow-left52 position-left"></i> <span class="text-semibold">Admin</span> - Dashboard</h4>
+						</div>
+
+						 
+					</div>
+					<!-- /Content Header -->
+					
+					<!-- Content Breadcrumb -->
+					<div class="breadcrumb-line">
+						<ul class="breadcrumb">
+							<li><a href="index.html"><i class="icon-home2 position-left"></i> Home</a></li>
+							 
+							<li class="active">Dashboard</li>
+						</ul>
+ 
+					</div>
+					<!-- /Content Breadcrumb -->
+				</div>
+				<!-- /page header -->
+
+
+				<!-- Content area -->
+				<div class="content">
+
+					<!-- Simple panel -->
+					<div class="panel panel-flat">
+						<div class="panel-heading">
+							<h5 class="panel-title">Dashboard</h5>
+						</div>
+
+						<div class="panel-body">
+							<!-- <div class="form-group">
+									<label class="col-lg-2 control-label text-semibold">Select Content Excel file</label>
+									<div class="col-lg-10">
+										<input type="file" class="file-input-extensions">
+										<span class="help-block">Allow only specific file Content.xlsx</span>
+									</div>
+							</div> -->
+							<div class="row">
+								<div class="col-lg-4">
+
+									<!-- Members online -->
+									<div class="panel bg-teal-400">
+										<div class="panel-body">
+											 
+
+											<h3 class="no-margin">3,450</h3>
+											Total Number Of Events
+											<div class="text-muted text-size-small"><a href="#">Details</a></div>
+										</div>
+
+										<div class="container-fluid">
+											<div id="members-online"></div>
+										</div>
+									</div>
+									<!-- /members online -->
+
+								</div>
+								
+								<div class="col-lg-4">
+
+									<!-- Members online -->
+									<div class="panel bg-orange-400">
+										<div class="panel-body">
+											 
+
+											<h3 class="no-margin">234</h3>
+											Total Number Of Books
+											<div class="text-muted text-size-small"><a href="#">Details</a></div>
+										</div>
+
+										<div class="container-fluid">
+											<div id="members-online"></div>
+										</div>
+									</div>
+									<!-- /members online -->
+
+								</div>
+								
+								<div class="col-lg-4">
+
+									<!-- Members online -->
+									<div class="panel bg-green-400">
+										<div class="panel-body">
+											 
+
+											<h3 class="no-margin">3,123</h3>
+											Total Number Of Questions
+											<div class="text-muted text-size-small"><a href="#">Details</a></div>
+										</div>
+
+										<div class="container-fluid">
+											<div id="members-online"></div>
+										</div>
+									</div>
+									<!-- /members online -->
+
+								</div>
+							</div>
+							
+							<div class="row">
+								<div class="col-lg-4">
+
+									<!-- Members online -->
+									<div class="panel bg-orange-400">
+										<div class="panel-body">
+											 
+											<h3 class="no-margin">1,450</h3>
+											Total Number of Videos
+											<div class="text-muted text-size-small"><a href="#">Details</a></div>
+										</div>
+
+										<div class="container-fluid">
+											<div id="members-online"></div>
+										</div>
+									</div>
+									<!-- /members online -->
+
+								</div>
+							</div>
+							
+						</div>
+					</div>
+					<!-- /simple panel -->
+ 
+					<!-- Footer -->
+					 <% include ./common/admin_lightfooter.htm %>
+					<!-- /footer -->
+
+				</div>
+				<!-- /content area -->
+
+			</div>
+			<!-- /main content -->
+
+		</div>
+		<!-- /page content -->
+
+	</div>
+	<!-- /page container -->
+
+</body>
+</html>
