@@ -6,3 +6,5 @@ User Management - Ajoy
 3. Change Password - Done
 4. Logout User - Done
 5. Clean Sessions - Done
+
+6. Show to others
