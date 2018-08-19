@@ -115,8 +115,7 @@
 													</a>
 
 														<ul class="dropdown-menu dropdown-menu-right">
-															<li><a href="#"><i class="icon-file-pdf"></i>Edit</a></li>
-														</ul></li>
+															<button type="button" class="btn btn-primary btn-icon" data-toggle="modal" data-target="#modal_subject_edit"><i class="icon-menu7"></i></button>&nbsp  &nbsp Edit  				</ul></li>
 												</ul>
 											</td>
 										</tr>
@@ -128,10 +127,15 @@
 
 						</div>
 					</div>
+					
 					<!-- /simple panel -->
 					
-					<button type="button" class="btn btn-info btn-float btn-rounded" style="float:right"><i class="icon-add"></i></button>
+					<button type="button" class="btn btn-info btn-float btn-rounded" style="float:right" data-toggle="modal" data-target="#modal_subject_add"><i class="icon-add"></i></button>
+					
+					
 					<!-- Footer -->
+					<% include ./modal_subject_add.htm %>
+					<% include ./modal_subject_edit.htm %>
 					<% include ../../../common/admin_lightfooter.htm %>
 					<!-- /footer -->
 
