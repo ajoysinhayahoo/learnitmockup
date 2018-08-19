@@ -3,6 +3,6 @@ os: linux
 
 files:
  - source: /
-   destination: /home/ec2-user/usermanagement
+   destination: /home/ec2-user/learnitmockup
 
    
